@@ -1,0 +1,41 @@
+//
+// 脚手架
+// ---------------------------------------------------
+
+// 重设 盒子模型
+*,
+*:before,
+*:after {
+  .box-sizing(border-box);
+}
+
+// Body reset
+html {
+	font-size: @font-size-base;
+	
+	//如果未设置透明度，iOS上的Safari会给予颜色一个默认的透明度。
+	//把透明度设为0，则会禁用此属性。如果你把透明度设为1，元素将会不可见
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+	background-color: @bgcolor;
+	color: @color;
+	font-family: @font-family-base;
+	line-height: @line-height-base;
+	font-size: 14px;
+	font-size: 1.4rem;
+	.text-size();
+}
+
+/* 标题文字大小 */
+h1 {font-size: 1.8em;}
+h2 {font-size: 1.6em;}
+h3 {font-size: 1.4em;}
+h4 {font-size: 1.2em;}
+h5,h6 {font-size: 1em;}
+
+/* ul,ol列表样式清除 */
+ul, ol {
+	list-style: none;
+}

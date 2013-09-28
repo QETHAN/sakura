@@ -1,0 +1,162 @@
+/* 字体缩放控制 */
+/* 全局默认字体颜色 */
+/* 全局默认背景色 */
+/* 全局默认字体大小 10px*/
+/* 行间距 20px*/
+/* 全局默认字体 */
+/* 栅栏的数量 */
+/* 栅栏间隔 */
+/* Extra small screen / phone */
+/* Small screen / tablet */
+/* Medium screen / desktop */
+/* Large screen / wide desktop */
+/* So media queries don't overlap when required, provide a maximum */
+/* Small screen / tablet */
+/* Medium screen / desktop */
+/* Large screen / wide desktop */
+/* 响应式容器 */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+/* 固定宽度的容器 960px*/
+.container-fixed {
+  width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.container-fixed:before,
+.container-fixed:after {
+  content: "";
+  display: table;
+}
+.container-fixed:after {
+  clear: both;
+}
+/* 行 左右负margin，消去container的左右padding */
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+/* grid 栅栏 */
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12,
+.grid-13,
+.grid-14,
+.grid-15,
+.grid-16,
+.grid-17,
+.grid-18,
+.grid-19,
+.grid-20 {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.grid-1 {
+  width: 5%;
+}
+.grid-2 {
+  width: 10%;
+}
+.grid-3 {
+  width: 15%;
+}
+.grid-4 {
+  width: 20%;
+}
+.grid-5 {
+  width: 25%;
+}
+.grid-6 {
+  width: 30%;
+}
+.grid-7 {
+  width: 35%;
+}
+.grid-8 {
+  width: 40%;
+}
+.grid-9 {
+  width: 45%;
+}
+.grid-10 {
+  width: 50%;
+}
+.grid-11 {
+  width: 55.00000000000001%;
+}
+.grid-12 {
+  width: 60%;
+}
+.grid-13 {
+  width: 65%;
+}
+.grid-14 {
+  width: 70%;
+}
+.grid-15 {
+  width: 75%;
+}
+.grid-16 {
+  width: 80%;
+}
+.grid-17 {
+  width: 85%;
+}
+.grid-18 {
+  width: 90%;
+}
+.grid-19 {
+  width: 95%;
+}
+.grid-20 {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}

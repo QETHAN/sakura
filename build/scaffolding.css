@@ -1,0 +1,59 @@
+/* 字体缩放控制 */
+/* 全局默认字体颜色 */
+/* 全局默认背景色 */
+/* 全局默认字体大小 10px*/
+/* 行间距 20px*/
+/* 全局默认字体 */
+/* 栅栏的数量 */
+/* 栅栏间隔 */
+/* Extra small screen / phone */
+/* Small screen / tablet */
+/* Medium screen / desktop */
+/* Large screen / wide desktop */
+/* So media queries don't overlap when required, provide a maximum */
+/* Small screen / tablet */
+/* Medium screen / desktop */
+/* Large screen / wide desktop */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  background-color: #fefefe;
+  color: #70798a;
+  font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", Microsoft Yahei, "\5b8b\4f53", sans-serif;
+  line-height: 2;
+  font-size: 14px;
+  font-size: 1.4rem;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+/* 标题文字大小 */
+h1 {
+  font-size: 1.8em;
+}
+h2 {
+  font-size: 1.6em;
+}
+h3 {
+  font-size: 1.4em;
+}
+h4 {
+  font-size: 1.2em;
+}
+h5,
+h6 {
+  font-size: 1em;
+}
+/* ul,ol列表样式清除 */
+ul,
+ol {
+  list-style: none;
+}
