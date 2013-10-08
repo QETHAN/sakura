@@ -4,6 +4,8 @@
 /* 全局默认字体大小 10px*/
 /* 行间距 20px*/
 /* 全局默认字体 */
+/* 标题 */
+/* 文本 状态 */
 /* 栅栏的数量 */
 /* 栅栏间隔 */
 /* Extra small screen / phone */
@@ -104,23 +106,6 @@ img {
 /* ie6 7 8(q) bug 显示为行内表现 */
 iframe {
   display: block;
-}
-/* 标题文字大小 */
-h1 {
-  font-size: 1.8em;
-}
-h2 {
-  font-size: 1.6em;
-}
-h3 {
-  font-size: 1.4em;
-}
-h4 {
-  font-size: 1.2em;
-}
-h5,
-h6 {
-  font-size: 1em;
 }
 /* ul,ol列表样式清除 */
 ul,

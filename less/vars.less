@@ -1,21 +1,64 @@
 //
-// Variables
+// 所有变量 Variables
 // -----------------------------------------------------
 
-// Global values
+// 全局变量 Global values
 // -----------------------------------------------------
 
 /* 全局默认字体颜色 */
 @color: #70798a;
 /* 全局默认背景色 */
 @bgcolor: #fefefe;
+
+// 灰色 Grays
+// -------------------------
+
+@gray-darker:            lighten(#000, 13.5%); // #222
+@gray-dark:              lighten(#000, 20%);   // #333
+@gray:                   lighten(#000, 33.5%); // #555
+@gray-light:             lighten(#000, 60%);   // #999
+@gray-lighter:           lighten(#000, 93.5%); // #eee
+
+
+// 标记 Brand colors
+// -------------------------
+
+@brand-primary:         #428bca;
+@brand-success:         #5cb85c;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+@brand-info:            #5bc0de;
+
+// 排版 Typography
+// -------------------------
+
 /* 全局默认字体大小 10px*/
-@font-size-base: 62.5%;
+@font-size-base: 10px;
+@font-size-large: ceil(@font-size-base * 1.8); // 18px
+@font-size-small: ceil(@font-size-base * 1.2); // 12px
+
 /* 行间距 20px*/
 @line-height-base: 2;
+@line-height-computed: floor(@font-size-base * @line-height-base);
+
 /* 全局默认字体 */
 @font-family-base: Helvetica,Tahoma,Arial,STXihei,"华文细黑",Microsoft Yahei,"\5b8b\4f53",sans-serif;
 
+/* 标题 */
+@headings-font-family: @font-family-base;
+@headings-font-weight: 500;
+@headings-line-height: 1.6;
+@headings-small-color:        @gray-light;
+
+/* 文本 状态 */
+@state-warning-text:             #c09853;
+@state-danger-text:              #b94a48;
+@state-success-text:             #468847;
+@state-info-text:                #3a87ad;
+@text-muted:                  @gray-light;
+
+// 水平 表单 和 列表 Horizontal forms & lists
+@component-offset-horizontal: 180px;
 
 // Grid
 // -----------------------------------------------------------
@@ -24,13 +67,13 @@
 @grid-columns: 20;
 
 // Point at which the navbar stops collapsing
-// @grid-float-breakpoint: @screen-tablet;
+@grid-float-breakpoint: @screen-tablet;
 
 /* 栅栏间隔 */
 @grid-gutter-width: 20px;
 
 
-// Media queries breakpoints
+// 媒体查询 关键点 Media queries breakpoints
 // --------------------------------------------------
 
 /* Extra small screen / phone */
