@@ -30,19 +30,31 @@ module.exports = function(grunt) {
                 }
             }
         },
+        
+        copy: {
+            main: {
+                files: [
+                  {src: ['./dist/*.css'], dest: './test/site/public/stylesheets/style.css'}, // includes files in path
+                  // {expand: true, cwd: './', src: ['./dist/*.css'], dest: './test/site/public/stylesheets/style.css'} // makes all src relative to cwd
+                ]
+            }
+        },
 
         watch: {
             scripts: {
                 files: ['less/*.less'],
-                tasks: ['less']
-            }
+                tasks: ['less','copy']
+            },
+            
         }
+
     });
 
     // grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('assemble-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('default', ['less', 'watch']);
+    grunt.registerTask('default', ['less', 'copy', 'watch']);
 
 };
