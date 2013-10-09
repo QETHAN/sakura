@@ -1,0 +1,45 @@
+//
+// 按钮 Buttons
+// -----------------------------------------------------------
+
+//基本样式
+.btn {
+  display: inline-block;
+  padding: @padding-base-vertical @padding-base-horizontal; //6,12
+  margin-bottom: 0; // for input.btn
+  font-size: @font-size-base * 1.4; // 14px
+  font-weight: @btn-font-weight; //normal
+  line-height: @line-height-base; //20px
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  .user-select(none);
+
+  &:focus {
+    .tab-focus();
+  }
+
+  &:hover,
+  &:focus {
+    color: @btn-default-color;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+    pointer-events: none; // Future-proof disabling of clicks
+    .opacity(.65);
+    .box-shadow(none);
+  }
+}

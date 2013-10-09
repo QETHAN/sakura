@@ -19,6 +19,7 @@
 // Grid System
 // --------------------------------------------------------
 
+// 流动 容器
 .container-fluid() {
 	margin-left: auto;
 	margin-right: auto;
@@ -27,24 +28,24 @@
 	.clearfix();
 }
 
+// 固定宽度 容器
 .container-fixed() {
-	width: @container-desktop;
+	width: @container-lg-desktop;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: (@grid-gutter-width/2);
 	padding-right: (@grid-gutter-width/2);
 	.clearfix();
 }
+
+// 一行 布局
 .make-row(@gutter: @grid-gutter-width) {
 	margin-left:  (@gutter / -2);
   	margin-right: (@gutter / -2);
   	.clearfix();
 }
 
-//
-//utility
-//-----------------------------------------
-
+// 清除浮动
 .clearfix() {
 	&:before,
 	&:after {
@@ -56,7 +57,7 @@
 	}
 }
 
-// Text overflow
+// 文本溢出 Text overflow
 // Requires inline-block or block for proper styling
 .text-overflow() {
   overflow: hidden;
@@ -72,4 +73,69 @@
   text-shadow: none;
   background-color: transparent;
   border: 0;
+}
+
+// 透明度 Opacity
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 filter
+  @opacity-ie: (@opacity * 100);
+  filter: ~"alpha(opacity=@{opacity-ie})";
+}
+
+// 边框圆角 Single side border-radius
+.border-all-radius(@radius) {
+  border-radius: @radius;
+}
+.border-top-radius(@radius) {
+  border-top-right-radius: @radius;
+  border-top-left-radius: @radius;
+}
+.border-right-radius(@radius) {
+  border-bottom-right-radius: @radius;
+  border-top-right-radius: @radius;
+}
+.border-bottom-radius(@radius) {
+  border-bottom-right-radius: @radius;
+  border-bottom-left-radius: @radius;
+}
+.border-left-radius(@radius) {
+  border-bottom-left-radius: @radius;
+  border-top-left-radius: @radius;
+}
+
+// 盒子阴影 Drop shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+  box-shadow: @shadow;
+}
+
+
+// 按钮尺寸 Button sizes
+// -------------------------
+.button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+  padding: @padding-vertical @padding-horizontal;
+  font-size: @font-size;
+  line-height: @line-height;
+  border-radius: @border-radius;
+}
+
+// 用户对元素的选择操作 User select
+// auto(内容）none（不允许选择）text(文本）。。。
+// For selecting text on the page
+.user-select(@select) {
+  -webkit-user-select: @select;
+  -moz-user-select: @select;
+  -ms-user-select: @select; // IE10+
+  -o-user-select: @select;
+  user-select: @select;
+}
+
+// Webkit-style focus
+.tab-focus() {
+  // Default
+  outline: thin dotted #333;
+  // Webkit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
