@@ -16,6 +16,7 @@
   border: 1px solid transparent;
   white-space: nowrap;
   .user-select(none);
+  border-radius: @border-radius-large;
 
   &:focus {
     .tab-focus();
@@ -67,4 +68,48 @@
 // Info appears as blue-green
 .btn-info {
   .button-variant(@btn-info-color; @btn-info-bg; @btn-info-borderColor);
+}
+
+// 按钮 尺寸 Button Sizes
+// --------------------------------------------------
+
+//大
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+}
+// 小
+.btn-sm,
+.btn-xs {
+  // line-height: ensure proper height of button next to small input
+  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+//特小
+.btn-xs {
+  padding: 1px 5px;
+}
+
+
+// 块 按钮 Block button
+// --------------------------------------------------
+
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
 }

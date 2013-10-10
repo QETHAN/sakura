@@ -19,11 +19,50 @@ html {
 }
 
 body {
-	background-color: @bgcolor;
+	background-color: @body-bg;
 	color: @color;
 	font-family: @font-family-base;
 	line-height: @line-height-base;
 	font-size: 14px;
 	font-size: 1.4rem;
 	.text-size();
+}
+
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+// Reset unusual Firefox-on-Android default style.
+//
+// See https://github.com/necolas/normalize.css/issues/214
+
+button,
+input,
+select[multiple],
+textarea {
+  background-image: none;
+}
+
+// Links
+
+a {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    .tab-focus();
+  }
 }

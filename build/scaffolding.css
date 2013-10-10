@@ -5,6 +5,7 @@
 /* 行间距 20px*/
 /* 全局默认字体 */
 /* 标题 */
+/* 链接 */
 /* 文本 状态 */
 /* 栅栏的数量 */
 /* 栅栏间隔 */
@@ -36,4 +37,30 @@ body {
   font-size: 1.4rem;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button,
+input,
+select[multiple],
+textarea {
+  background-image: none;
+}
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #2a6496;
+  text-decoration: underline;
+}
+a:focus {
+  outline-offset: -2px;
 }
