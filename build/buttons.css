@@ -19,11 +19,11 @@
 /* Large screen / wide desktop */
 .btn {
   display: inline-block;
-  padding: 6px 32px;
+  padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 2;
+  line-height: 1.8;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -284,19 +284,22 @@ fieldset[disabled] .btn-info.active {
   border-color: #46b8da;
 }
 .btn-lg {
-  padding: 10px 36px;
+  padding: 8px 16px;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.2;
   border-radius: 6px;
 }
-.btn-sm,
-.btn-xs {
+.btn-sm {
   padding: 5px 10px;
   font-size: 12px;
-  line-height: 1.33;
+  line-height: 1;
   border-radius: 3px;
 }
 .btn-xs {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 3px;
   padding: 1px 5px;
 }
 .btn-block {

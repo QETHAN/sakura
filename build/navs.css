@@ -62,7 +62,7 @@
 }
 .nav .nav-divider {
   height: 1px;
-  margin: 9px 0;
+  margin: 8px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -78,7 +78,7 @@
 }
 .nav-tabs > li > a {
   margin-right: 2px;
-  line-height: 2;
+  line-height: 1.8;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
 }

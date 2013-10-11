@@ -32,7 +32,7 @@ body {
   background-color: #fefefe;
   color: #70798a;
   font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", Microsoft Yahei, "\5b8b\4f53", sans-serif;
-  line-height: 2;
+  line-height: 1.8;
   font-size: 14px;
   font-size: 1.4rem;
   -webkit-text-size-adjust: 100%;
@@ -63,4 +63,20 @@ a:focus {
 }
 a:focus {
   outline-offset: -2px;
+}
+hr {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
 }

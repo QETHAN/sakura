@@ -61,7 +61,7 @@
 }
 .dropdown-menu .divider {
   height: 1px;
-  margin: 9px 0;
+  margin: 8px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -70,7 +70,7 @@
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 2;
+  line-height: 1.8;
   color: #333333;
   white-space: nowrap;
 }
@@ -111,7 +111,7 @@
   display: block;
   padding: 3px 20px;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.8;
   color: #999999;
 }
 .dropdown-backdrop {

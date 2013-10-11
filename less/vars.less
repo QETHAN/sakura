@@ -33,21 +33,21 @@
 // -------------------------
 
 /* 全局默认字体大小 10px*/
-@font-size-base: 10px;
+@font-size-base:  10px;
 @font-size-large: ceil(@font-size-base * 1.8); // 18px
 @font-size-small: ceil(@font-size-base * 1.2); // 12px
 
 /* 行间距 20px*/
-@line-height-base: 2;
-@line-height-computed: floor(@font-size-base * @line-height-base);
+@line-height-base:      1.8;
+@line-height-computed:  floor(@font-size-base * @line-height-base);
 
 /* 全局默认字体 */
 @font-family-base: Helvetica,Tahoma,Arial,STXihei,"华文细黑",Microsoft Yahei,"\5b8b\4f53",sans-serif;
 
 /* 标题 */
-@headings-font-family: @font-family-base;
-@headings-font-weight: 500;
-@headings-line-height: 1.6;
+@headings-font-family:        @font-family-base;
+@headings-font-weight:        500;
+@headings-line-height:        @font-size-base*2;
 @headings-small-color:        @gray-light;
 
 /* 链接 */
@@ -59,7 +59,7 @@
 @state-danger-text:              #b94a48;
 @state-success-text:             #468847;
 @state-info-text:                #3a87ad;
-@text-muted:                  @gray-light;
+@text-muted:                     @gray-light;
 
 // 水平 表单 和 列表 Horizontal forms & lists
 @component-offset-horizontal: 180px;
@@ -120,16 +120,16 @@
 // Based on 14px font-size and 1.428 line-height (~20px to start)
 
 @padding-base-vertical:          6px;
-@padding-base-horizontal:        32px;
+@padding-base-horizontal:        12px;
 
-@padding-large-vertical:         10px;
-@padding-large-horizontal:       36px;
+@padding-large-vertical:         8px;
+@padding-large-horizontal:       16px;
 
 @padding-small-vertical:         5px;
 @padding-small-horizontal:       10px;
 
-@line-height-large:              1.5;  // 21px
-@line-height-small:              1.33; // 18px
+@line-height-large:              1.2;  // 21px 1.5
+@line-height-small:              1; // 18px 1.33
 
 @border-radius-base:             4px;
 @border-radius-large:            6px;
@@ -297,13 +297,13 @@
 @nav-open-caret-border-color:               #fff;
 
 // Tabs
-@nav-tabs-border-color:                     #ddd;
+@nav-tabs-border-color:                           #ddd;
 
-@nav-tabs-link-hover-border-color:          @gray-lighter;
+@nav-tabs-link-hover-border-color:                @gray-lighter;
 
-@nav-tabs-active-link-hover-bg:             @body-bg;
-@nav-tabs-active-link-hover-color:          @gray;
-@nav-tabs-active-link-hover-border-color:   #ddd;
+@nav-tabs-active-link-hover-bg:                   @body-bg;
+@nav-tabs-active-link-hover-color:                @gray;
+@nav-tabs-active-link-hover-border-color:         #ddd;
 
 @nav-tabs-justified-link-border-color:            #ddd;
 @nav-tabs-justified-active-link-border-color:     @body-bg;
@@ -311,6 +311,20 @@
 // Pills
 @nav-pills-active-link-hover-bg:            @component-active-bg;
 @nav-pills-active-link-hover-color:         #fff;
+
+
+// Labels
+// -------------------------
+
+@label-default-bg:            @gray-light;
+@label-primary-bg:            @brand-primary;
+@label-success-bg:            @brand-success;
+@label-info-bg:               @brand-info;
+@label-warning-bg:            @brand-warning;
+@label-danger-bg:             @brand-danger;
+
+@label-color:                 #fff;
+@label-link-hover-color:      #fff;
 
 // 表单 Forms
 // -------------------------
@@ -353,3 +367,147 @@
 @state-info-text:                #3a87ad;
 @state-info-bg:                  #d9edf7;
 @state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+
+
+// Tables
+// -------------------------
+
+@table-cell-padding:                 8px;
+@table-condensed-cell-padding:       5px;
+
+@table-bg:                           transparent; // overall background-color
+@table-bg-accent:                    #f9f9f9; // for striping
+@table-bg-hover:                     #f5f5f5;
+@table-bg-active:                    @table-bg-hover;
+
+@table-border-color:                 #ddd; // table and cell border
+
+// 关闭 X Close
+// ------------------------
+@close-color:                 #000;
+@close-font-weight:           bold;
+@close-text-shadow:           0 1px 0 #fff;
+
+// 面包屑 路径层次 Breadcrumbs
+// -------------------------
+@breadcrumb-bg:               #f5f5f5;
+@breadcrumb-color:            #ccc;
+@breadcrumb-active-color:     @gray-light;
+
+// 进度条 Progress bars
+// -------------------------
+@progress-bg:                 #f5f5f5;
+@progress-bar-color:          #fff;
+
+@progress-bar-bg:             @brand-primary;
+@progress-bar-success-bg:     @brand-success;
+@progress-bar-warning-bg:     @brand-warning;
+@progress-bar-danger-bg:      @brand-danger;
+@progress-bar-info-bg:        @brand-info;
+
+// Miscellaneous
+// -------------------------
+
+// Hr border color
+@hr-border:                   @gray-lighter;
+
+// Horizontal forms & lists
+@component-offset-horizontal: 180px;
+
+
+// 分页 Pagination
+// -------------------------
+
+@pagination-bg:                        #fff;
+@pagination-border:                    #ddd;
+
+@pagination-hover-bg:                  @gray-lighter;
+
+@pagination-active-bg:                 @brand-primary;
+@pagination-active-color:              #fff;
+
+@pagination-disabled-color:            @gray-light;
+
+// 徽标 Badges
+// -------------------------
+@badge-color:                 #fff;
+@badge-link-hover-color:      #fff;
+@badge-bg:                    @gray-light;
+
+@badge-active-color:          @link-color;
+@badge-active-bg:             #fff;
+
+@badge-font-weight:           bold;
+@badge-line-height:           1;
+@badge-border-radius:         10px;
+
+
+// 提示 Alerts
+// -------------------------
+@alert-padding:               10px;
+@alert-border-radius:         @border-radius-base;
+@alert-link-font-weight:      bold;
+
+@alert-success-bg:            @state-success-bg;
+@alert-success-text:          @state-success-text;
+@alert-success-border:        @state-success-border;
+
+@alert-info-bg:               @state-info-bg;
+@alert-info-text:             @state-info-text;
+@alert-info-border:           @state-info-border;
+
+@alert-warning-bg:            @state-warning-bg;
+@alert-warning-text:          @state-warning-text;
+@alert-warning-border:        @state-warning-border;
+
+@alert-danger-bg:             @state-danger-bg;
+@alert-danger-text:           @state-danger-text;
+@alert-danger-border:         @state-danger-border;
+
+
+// 模态弹出框 Modals
+// -------------------------
+@modal-inner-padding:         20px;
+
+@modal-title-padding:         15px;
+@modal-title-line-height:     @line-height-base;
+
+@modal-content-bg:                             #fff;
+@modal-content-border-color:                   rgba(0,0,0,.2);
+@modal-content-fallback-border-color:          #999;
+
+@modal-backdrop-bg:           #000;
+@modal-header-border-color:   #e5e5e5;
+@modal-footer-border-color:   @modal-header-border-color;
+
+
+// Panels
+// -------------------------
+@panel-bg:                    #fff;
+@panel-inner-border:          #ddd;
+@panel-border-radius:         @border-radius-base;
+@panel-footer-bg:             #f5f5f5;
+
+@panel-default-text:          @gray-dark;
+@panel-default-border:        #ddd;
+@panel-default-heading-bg:    #f5f5f5;
+
+@panel-primary-text:          #fff;
+@panel-primary-border:        @brand-primary;
+@panel-primary-heading-bg:    @brand-primary;
+
+@panel-success-text:          @state-success-text;
+@panel-success-border:        @state-success-border;
+@panel-success-heading-bg:    @state-success-bg;
+
+@panel-warning-text:          @state-warning-text;
+@panel-warning-border:        @state-warning-border;
+@panel-warning-heading-bg:    @state-warning-bg;
+
+@panel-danger-text:           @state-danger-text;
+@panel-danger-border:         @state-danger-border;
+@panel-danger-heading-bg:     @state-danger-bg;
+
+@panel-info-text:             @state-info-text;
+@panel-info-border:           @state-info-border;
+@panel-info-heading-bg:       @state-info-bg;

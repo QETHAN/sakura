@@ -1,0 +1,40 @@
+/* 字体缩放控制 */
+/* 全局默认字体颜色 */
+/* 全局默认背景色 */
+/* 全局默认字体大小 10px*/
+/* 行间距 20px*/
+/* 全局默认字体 */
+/* 标题 */
+/* 链接 */
+/* 文本 状态 */
+/* 栅栏的数量 */
+/* 栅栏间隔 */
+/* Extra small screen / phone */
+/* Small screen / tablet */
+/* Medium screen / desktop */
+/* Large screen / wide desktop */
+/* So media queries don't overlap when required, provide a maximum */
+/* Small screen / tablet */
+/* Medium screen / desktop */
+/* Large screen / wide desktop */
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+.fade.in {
+  opacity: 1;
+}
+.collapse {
+  display: none;
+}
+.collapse.in {
+  display: block;
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
