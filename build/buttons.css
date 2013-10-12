@@ -34,7 +34,7 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 .btn:focus {
   outline-offset: -2px;
